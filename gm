@@ -1,9 +1,6 @@
 echo "inicio"
 
-git fetch
-[ $? -ne "0" ] && echo "Erro";
-
-git checkout $2
-[ $? -ne "0" ] && return 2;
+gcm
+[ $? -ne "0" ] && return 1;
 
 echo "FIM"
