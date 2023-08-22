@@ -1,4 +1,4 @@
-echo "INICIO"
+echo "inicio"
 
 git fetch
 [ $? -ne "0" ] && echo "Erro";
